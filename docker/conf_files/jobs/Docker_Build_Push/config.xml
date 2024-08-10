@@ -1,0 +1,57 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <authToken>build</authToken>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+#!/bin/bash
+#########################################
+# Created by: Avishay
+# Edited by : Alex M. Schapelle
+# Purpose: build script for jenkins job (task for home)
+# Date: 23/07/2024
+# Version: 0.0.1
+#########################################
+
+
+## Checking if GIT is installed
+if which git ;then
+    git clone https://github.com/lavishay-technion/details_app.git ## Cloning details_App repo
+	cd details_app
+	docker build . -t details_app   ## Building the image locally
+else
+    echo &quot;[!] Missing binary: git &quot;
+    exit 1
+fi 
+
+docker compose build --no-cache
+
+docker tag details_app:latest alayani/details_app:0.0.1
+
+echo &quot;[+] Working until tagging the new image&quot;
+
+docker login -u alayani -p &quot;dckr_pat_P93P4lSSbkA1tQq5Kr7jOBK-jec&quot;
+
+echo &quot;[+] Working until Login&quot;
+
+docker push alayani/details_app:0.0.1
+
+[[ $? == 0 ]] &amp;&amp; echo &quot;[+] This is working&quot; || echo &quot;[!] Something went wrong&quot;
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

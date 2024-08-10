@@ -1,0 +1,318 @@
+Started by user [8mha:////4BTN94oPI0RONfLTy+qkjqH+7UbA7VyJZf901D57+aUyAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Docker_Build_Push
+[Docker_Build_Push] $ /bin/bash /tmp/jenkins7710397079351403587.sh
+/usr/bin/git
+Cloning into 'details_app'...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 680B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-alpine
+#2 DONE 4.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 77B done
+#3 DONE 0.0s
+
+#4 [base 1/6] FROM docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 27.69MB 0.2s done
+#5 DONE 0.2s
+
+#4 [base 1/6] FROM docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca
+#4 CACHED
+
+#6 [base 2/6] COPY ./pyproject.toml ./
+#6 DONE 0.1s
+
+#7 [base 3/6] RUN apk add --no-cache --update build-base git python3-dev libffi-dev
+#7 0.322 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+#7 1.089 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+#7 1.609 (1/40) Installing libgcc (13.2.1_git20240309-r0)
+#7 1.662 (2/40) Installing jansson (2.14-r4)
+#7 1.712 (3/40) Installing libstdc++ (13.2.1_git20240309-r0)
+#7 1.783 (4/40) Installing zstd-libs (1.5.6-r0)
+#7 1.843 (5/40) Installing binutils (2.42-r0)
+#7 1.978 (6/40) Installing libmagic (5.45-r1)
+#7 2.075 (7/40) Installing file (5.45-r1)
+#7 2.125 (8/40) Installing libgomp (13.2.1_git20240309-r0)
+#7 2.178 (9/40) Installing libatomic (13.2.1_git20240309-r0)
+#7 2.229 (10/40) Installing gmp (6.3.0-r1)
+#7 2.284 (11/40) Installing isl26 (0.26-r1)
+#7 2.355 (12/40) Installing mpfr4 (4.2.1-r0)
+#7 2.413 (13/40) Installing mpc1 (1.3.1-r1)
+#7 2.465 (14/40) Installing gcc (13.2.1_git20240309-r0)
+#7 3.679 (15/40) Installing libstdc++-dev (13.2.1_git20240309-r0)
+#7 3.876 (16/40) Installing musl-dev (1.2.5-r0)
+#7 4.000 (17/40) Installing g++ (13.2.1_git20240309-r0)
+#7 4.381 (18/40) Installing make (4.4.1-r2)
+#7 4.435 (19/40) Installing fortify-headers (1.1-r3)
+#7 4.486 (20/40) Installing patch (2.7.6-r10)
+#7 4.538 (21/40) Installing build-base (0.5-r3)
+#7 4.589 (22/40) Installing brotli-libs (1.1.0-r2)
+#7 4.649 (23/40) Installing c-ares (1.28.1-r0)
+#7 4.784 (24/40) Installing libunistring (1.2-r0)
+#7 4.887 (25/40) Installing libidn2 (2.3.7-r0)
+#7 4.939 (26/40) Installing nghttp2-libs (1.62.1-r0)
+#7 4.991 (27/40) Installing libpsl (0.21.5-r1)
+#7 5.042 (28/40) Installing libcurl (8.9.0-r0)
+#7 5.101 (29/40) Installing pcre2 (10.43-r0)
+#7 5.159 (30/40) Installing git (2.45.2-r0)
+#7 5.344 (31/40) Installing git-init-template (2.45.2-r0)
+#7 5.397 (32/40) Installing linux-headers (6.6-r0)
+#7 5.569 (33/40) Installing pkgconf (2.2.0-r0)
+#7 5.620 (34/40) Installing libffi-dev (3.4.6-r0)
+#7 5.674 (35/40) Installing mpdecimal (4.0.0-r0)
+#7 5.726 (36/40) Installing python3 (3.12.3-r1)
+#7 6.004 (37/40) Installing python3-pycache-pyc0 (3.12.3-r1)
+#7 6.183 (38/40) Installing pyc (3.12.3-r1)
+#7 6.233 (39/40) Installing python3-pyc (3.12.3-r1)
+#7 6.283 (40/40) Installing python3-dev (3.12.3-r1)
+#7 7.010 Executing busybox-1.36.1-r29.trigger
+#7 7.033 OK: 379 MiB in 77 packages
+#7 DONE 7.6s
+
+#8 [base 4/6] RUN pip install poetry
+#8 3.260 Collecting poetry
+#8 4.496   Downloading poetry-1.8.3-py3-none-any.whl.metadata (6.8 kB)
+#8 4.597 Collecting build<2.0.0,>=1.0.3 (from poetry)
+#8 4.653   Downloading build-1.2.1-py3-none-any.whl.metadata (4.3 kB)
+#8 4.733 Collecting cachecontrol<0.15.0,>=0.14.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry)
+#8 4.801   Downloading cachecontrol-0.14.0-py3-none-any.whl.metadata (3.1 kB)
+#8 4.889 Collecting cleo<3.0.0,>=2.1.0 (from poetry)
+#8 4.946   Downloading cleo-2.1.0-py3-none-any.whl.metadata (12 kB)
+#8 5.025 Collecting crashtest<0.5.0,>=0.4.1 (from poetry)
+#8 5.081   Downloading crashtest-0.4.1-py3-none-any.whl.metadata (1.1 kB)
+#8 5.316 Collecting dulwich<0.22.0,>=0.21.2 (from poetry)
+#8 5.458   Downloading dulwich-0.21.7-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (4.3 kB)
+#8 5.528 Collecting fastjsonschema<3.0.0,>=2.18.0 (from poetry)
+#8 5.583   Downloading fastjsonschema-2.20.0-py3-none-any.whl.metadata (2.1 kB)
+#8 5.654 Collecting installer<0.8.0,>=0.7.0 (from poetry)
+#8 5.710   Downloading installer-0.7.0-py3-none-any.whl.metadata (936 bytes)
+#8 5.819 Collecting keyring<25.0.0,>=24.0.0 (from poetry)
+#8 5.874   Downloading keyring-24.3.1-py3-none-any.whl.metadata (20 kB)
+#8 5.967 Collecting packaging>=23.1 (from poetry)
+#8 6.022   Downloading packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+#8 6.095 Collecting pexpect<5.0.0,>=4.7.0 (from poetry)
+#8 6.148   Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+#8 6.233 Collecting pkginfo<2.0,>=1.10 (from poetry)
+#8 6.288   Downloading pkginfo-1.11.1-py3-none-any.whl.metadata (11 kB)
+#8 6.390 Collecting platformdirs<5,>=3.0.0 (from poetry)
+#8 6.444   Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+#8 6.545 Collecting poetry-core==1.9.0 (from poetry)
+#8 6.602   Downloading poetry_core-1.9.0-py3-none-any.whl.metadata (3.5 kB)
+#8 6.683 Collecting poetry-plugin-export<2.0.0,>=1.6.0 (from poetry)
+#8 6.738   Downloading poetry_plugin_export-1.8.0-py3-none-any.whl.metadata (2.8 kB)
+#8 6.806 Collecting pyproject-hooks<2.0.0,>=1.0.0 (from poetry)
+#8 6.861   Downloading pyproject_hooks-1.1.0-py3-none-any.whl.metadata (1.3 kB)
+#8 6.957 Collecting requests<3.0,>=2.26 (from poetry)
+#8 7.012   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+#8 7.083 Collecting requests-toolbelt<2.0.0,>=1.0.0 (from poetry)
+#8 7.139   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+#8 7.222 Collecting shellingham<2.0,>=1.5 (from poetry)
+#8 7.278   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+#8 7.378 Collecting tomlkit<1.0.0,>=0.11.4 (from poetry)
+#8 7.435   Downloading tomlkit-0.13.0-py3-none-any.whl.metadata (2.7 kB)
+#8 7.521 Collecting trove-classifiers>=2022.5.19 (from poetry)
+#8 7.577   Downloading trove_classifiers-2024.7.2-py3-none-any.whl.metadata (2.2 kB)
+#8 7.724 Collecting virtualenv<21.0.0,>=20.23.0 (from poetry)
+#8 7.778   Downloading virtualenv-20.26.3-py3-none-any.whl.metadata (4.5 kB)
+#8 7.988 Collecting msgpack<2.0.0,>=0.5.2 (from cachecontrol<0.15.0,>=0.14.0->cachecontrol[filecache]<0.15.0,>=0.14.0->poetry)
+#8 8.042   Downloading msgpack-1.0.8-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (9.1 kB)
+#8 8.154 Collecting filelock>=3.8.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry)
+#8 8.208   Downloading filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+#8 8.983 Collecting rapidfuzz<4.0.0,>=3.0.0 (from cleo<3.0.0,>=2.1.0->poetry)
+#8 9.040   Downloading rapidfuzz-3.9.6-cp311-cp311-musllinux_1_2_x86_64.whl.metadata (12 kB)
+#8 9.139 Collecting urllib3>=1.25 (from dulwich<0.22.0,>=0.21.2->poetry)
+#8 9.194   Downloading urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+#8 9.284 Collecting jaraco.classes (from keyring<25.0.0,>=24.0.0->poetry)
+#8 9.341   Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+#8 9.440 Collecting importlib-metadata>=4.11.4 (from keyring<25.0.0,>=24.0.0->poetry)
+#8 9.497   Downloading importlib_metadata-8.2.0-py3-none-any.whl.metadata (4.7 kB)
+#8 9.570 Collecting SecretStorage>=3.2 (from keyring<25.0.0,>=24.0.0->poetry)
+#8 9.625   Downloading SecretStorage-3.3.3-py3-none-any.whl.metadata (4.0 kB)
+#8 9.692 Collecting jeepney>=0.4.2 (from keyring<25.0.0,>=24.0.0->poetry)
+#8 9.746   Downloading jeepney-0.8.0-py3-none-any.whl.metadata (1.3 kB)
+#8 9.815 Collecting ptyprocess>=0.5 (from pexpect<5.0.0,>=4.7.0->poetry)
+#8 9.869   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+#8 10.03 Collecting charset-normalizer<4,>=2 (from requests<3.0,>=2.26->poetry)
+#8 10.08   Downloading charset_normalizer-3.3.2-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (33 kB)
+#8 10.18 Collecting idna<4,>=2.5 (from requests<3.0,>=2.26->poetry)
+#8 10.24   Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+#8 10.33 Collecting certifi>=2017.4.17 (from requests<3.0,>=2.26->poetry)
+#8 10.38   Downloading certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+#8 10.63 Collecting distlib<1,>=0.3.7 (from virtualenv<21.0.0,>=20.23.0->poetry)
+#8 10.69   Downloading distlib-0.3.8-py2.py3-none-any.whl.metadata (5.1 kB)
+#8 10.82 Collecting zipp>=0.5 (from importlib-metadata>=4.11.4->keyring<25.0.0,>=24.0.0->poetry)
+#8 10.88   Downloading zipp-3.19.2-py3-none-any.whl.metadata (3.6 kB)
+#8 11.10 Collecting cryptography>=2.0 (from SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry)
+#8 11.16   Downloading cryptography-43.0.0-cp39-abi3-musllinux_1_2_x86_64.whl.metadata (5.4 kB)
+#8 11.27 Collecting more-itertools (from jaraco.classes->keyring<25.0.0,>=24.0.0->poetry)
+#8 11.32   Downloading more_itertools-10.4.0-py3-none-any.whl.metadata (36 kB)
+#8 11.50 Collecting cffi>=1.12 (from cryptography>=2.0->SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry)
+#8 11.56   Downloading cffi-1.17.0-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (1.5 kB)
+#8 11.65 Collecting pycparser (from cffi>=1.12->cryptography>=2.0->SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry)
+#8 11.71   Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+#8 11.80 Downloading poetry-1.8.3-py3-none-any.whl (249 kB)
+#8 11.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.9/249.9 kB 2.5 MB/s eta 0:00:00
+#8 11.96 Downloading poetry_core-1.9.0-py3-none-any.whl (309 kB)
+#8 12.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.5/309.5 kB 5.1 MB/s eta 0:00:00
+#8 12.08 Downloading build-1.2.1-py3-none-any.whl (21 kB)
+#8 12.14 Downloading cachecontrol-0.14.0-py3-none-any.whl (22 kB)
+#8 12.19 Downloading cleo-2.1.0-py3-none-any.whl (78 kB)
+#8 12.20    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 kB 15.4 MB/s eta 0:00:00
+#8 12.26 Downloading crashtest-0.4.1-py3-none-any.whl (7.6 kB)
+#8 12.32 Downloading dulwich-0.21.7-cp311-cp311-musllinux_1_1_x86_64.whl (531 kB)
+#8 12.38    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 531.8/531.8 kB 9.7 MB/s eta 0:00:00
+#8 12.43 Downloading fastjsonschema-2.20.0-py3-none-any.whl (23 kB)
+#8 12.49 Downloading installer-0.7.0-py3-none-any.whl (453 kB)
+#8 12.50    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 453.8/453.8 kB 37.6 MB/s eta 0:00:00
+#8 12.56 Downloading keyring-24.3.1-py3-none-any.whl (38 kB)
+#8 12.62 Downloading packaging-24.1-py3-none-any.whl (53 kB)
+#8 12.62    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 11.0 MB/s eta 0:00:00
+#8 12.68 Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+#8 12.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 12.1 MB/s eta 0:00:00
+#8 12.74 Downloading pkginfo-1.11.1-py3-none-any.whl (31 kB)
+#8 12.80 Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+#8 12.86 Downloading poetry_plugin_export-1.8.0-py3-none-any.whl (10 kB)
+#8 12.92 Downloading pyproject_hooks-1.1.0-py3-none-any.whl (9.2 kB)
+#8 12.98 Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+#8 12.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 12.0 MB/s eta 0:00:00
+#8 13.04 Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+#8 13.05    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 10.4 MB/s eta 0:00:00
+#8 13.10 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+#8 13.16 Downloading tomlkit-0.13.0-py3-none-any.whl (37 kB)
+#8 13.22 Downloading trove_classifiers-2024.7.2-py3-none-any.whl (13 kB)
+#8 13.28 Downloading virtualenv-20.26.3-py3-none-any.whl (5.7 MB)
+#8 13.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 34.2 MB/s eta 0:00:00
+#8 13.50 Downloading certifi-2024.7.4-py3-none-any.whl (162 kB)
+#8 13.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.0/163.0 kB 38.7 MB/s eta 0:00:00
+#8 13.56 Downloading charset_normalizer-3.3.2-cp311-cp311-musllinux_1_1_x86_64.whl (140 kB)
+#8 13.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.9/140.9 kB 38.3 MB/s eta 0:00:00
+#8 13.63 Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+#8 13.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 kB 69.5 MB/s eta 0:00:00
+#8 13.69 Downloading filelock-3.15.4-py3-none-any.whl (16 kB)
+#8 13.75 Downloading idna-3.7-py3-none-any.whl (66 kB)
+#8 13.76    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 14.7 MB/s eta 0:00:00
+#8 13.81 Downloading importlib_metadata-8.2.0-py3-none-any.whl (25 kB)
+#8 13.87 Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+#8 13.88    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 7.7 MB/s eta 0:00:00
+#8 13.93 Downloading msgpack-1.0.8-cp311-cp311-musllinux_1_1_x86_64.whl (409 kB)
+#8 13.94    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.1/409.1 kB 49.6 MB/s eta 0:00:00
+#8 14.00 Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+#8 14.15 Downloading rapidfuzz-3.9.6-cp311-cp311-musllinux_1_2_x86_64.whl (4.4 MB)
+#8 14.46    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 14.3 MB/s eta 0:00:00
+#8 14.52 Downloading SecretStorage-3.3.3-py3-none-any.whl (15 kB)
+#8 14.57 Downloading urllib3-2.2.2-py3-none-any.whl (121 kB)
+#8 14.58    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.4/121.4 kB 24.9 MB/s eta 0:00:00
+#8 14.64 Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+#8 14.70 Downloading cryptography-43.0.0-cp39-abi3-musllinux_1_2_x86_64.whl (4.1 MB)
+#8 14.77    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 61.6 MB/s eta 0:00:00
+#8 14.82 Downloading zipp-3.19.2-py3-none-any.whl (9.0 kB)
+#8 14.88 Downloading more_itertools-10.4.0-py3-none-any.whl (60 kB)
+#8 14.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.9/60.9 kB 3.1 MB/s eta 0:00:00
+#8 14.96 Downloading cffi-1.17.0-cp311-cp311-musllinux_1_1_x86_64.whl (478 kB)
+#8 14.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 478.3/478.3 kB 68.7 MB/s eta 0:00:00
+#8 15.02 Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+#8 15.03    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 25.5 MB/s eta 0:00:00
+#8 15.30 Installing collected packages: trove-classifiers, ptyprocess, fastjsonschema, distlib, zipp, urllib3, tomlkit, shellingham, rapidfuzz, pyproject-hooks, pycparser, poetry-core, platformdirs, pkginfo, pexpect, packaging, msgpack, more-itertools, jeepney, installer, idna, filelock, crashtest, charset-normalizer, certifi, virtualenv, requests, jaraco.classes, importlib-metadata, dulwich, cleo, cffi, build, requests-toolbelt, cryptography, cachecontrol, SecretStorage, keyring, poetry-plugin-export, poetry
+#8 18.09 Successfully installed SecretStorage-3.3.3 build-1.2.1 cachecontrol-0.14.0 certifi-2024.7.4 cffi-1.17.0 charset-normalizer-3.3.2 cleo-2.1.0 crashtest-0.4.1 cryptography-43.0.0 distlib-0.3.8 dulwich-0.21.7 fastjsonschema-2.20.0 filelock-3.15.4 idna-3.7 importlib-metadata-8.2.0 installer-0.7.0 jaraco.classes-3.4.0 jeepney-0.8.0 keyring-24.3.1 more-itertools-10.4.0 msgpack-1.0.8 packaging-24.1 pexpect-4.9.0 pkginfo-1.11.1 platformdirs-4.2.2 poetry-1.8.3 poetry-core-1.9.0 poetry-plugin-export-1.8.0 ptyprocess-0.7.0 pycparser-2.22 pyproject-hooks-1.1.0 rapidfuzz-3.9.6 requests-2.32.3 requests-toolbelt-1.0.0 shellingham-1.5.4 tomlkit-0.13.0 trove-classifiers-2024.7.2 urllib3-2.2.2 virtualenv-20.26.3 zipp-3.19.2
+#8 18.09 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 18.43 
+#8 18.43 [notice] A new release of pip is available: 24.0 -> 24.2
+#8 18.43 [notice] To update, run: pip install --upgrade pip
+#8 DONE 18.9s
+
+#9 [base 5/6] RUN poetry config virtualenvs.create false
+#9 DONE 0.7s
+
+#10 [base 6/6] RUN poetry install --no-dev
+#10 0.721 Skipping virtualenv creation, as specified in config file.
+#10 0.993 The `--no-dev` option is deprecated, use the `--only main` notation instead.
+#10 0.993 Updating dependencies
+#10 0.994 Resolving dependencies...
+#10 6.370 
+#10 6.370 Package operations: 18 installs, 0 updates, 0 removals
+#10 6.370 
+#10 6.371   - Installing markupsafe (2.1.5)
+#10 6.680   - Installing blinker (1.8.2)
+#10 6.682   - Installing click (8.1.7)
+#10 6.686   - Installing greenlet (3.0.3)
+#10 6.689   - Installing jinja2 (3.1.4)
+#10 6.690   - Installing psycopg2-binary (2.9.9)
+#10 6.692   - Installing itsdangerous (2.2.0)
+#10 6.693   - Installing typing-extensions (4.12.2)
+#10 6.703   - Installing werkzeug (3.0.3)
+#10 7.344   - Installing flask (3.0.3)
+#10 7.347   - Installing psycopg2-pool (1.2)
+#10 7.349   - Installing sqlalchemy (2.0.32)
+#10 7.352   - Installing wtforms (3.1.2)
+#10 7.829   - Installing flask-sqlalchemy (3.1.1)
+#10 7.833   - Installing flask-wtf (1.2.1)
+#10 7.834   - Installing postgres (4.0)
+#10 7.835   - Installing validators (0.28.3)
+#10 7.836   - Installing gunicorn (22.0.0)
+#10 8.038 
+#10 8.038 Writing lock file
+#10 8.038 
+#10 8.038 Installing the current project: details-app (0.1.0)
+#10 8.038 
+#10 8.039 Warning: The current project could not be installed: [Errno 2] No such file or directory: '/README.md'
+#10 8.039 If you do not want to install the current project use --no-root.
+#10 8.039 If you want to use Poetry only for dependency management but not for packaging, you can disable package mode by setting package-mode = false in your pyproject.toml file.
+#10 8.039 In a future version of Poetry this warning will become an error!
+#10 DONE 8.3s
+
+#11 [stage-1 2/6] WORKDIR /home/app
+#11 CACHED
+
+#12 [stage-1 3/6] RUN apk add git
+#12 CACHED
+
+#13 [stage-1 4/6] COPY --from=base /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+#13 DONE 0.9s
+
+#14 [stage-1 5/6] COPY --from=base /usr/local/bin /usr/local/bin
+#14 DONE 0.0s
+
+#15 [stage-1 6/6] COPY . /home/app/
+#15 DONE 0.1s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 0.7s done
+#16 writing image sha256:564ab86a0dc3b8dc5b5487cf297da6ffe28b018335cd22fbc75e59822ace9065 done
+#16 naming to docker.io/library/details_app done
+#16 DONE 0.7s
+[+] Working until tagging the new image
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+
+Login Succeeded
+[+] Working until Login
+The push refers to repository [docker.io/alayani/details_app_registry/details_app]
+89087c10da8a: Preparing
+87433514bece: Preparing
+2b657d50dac7: Preparing
+c7e794632bc3: Preparing
+b9a3fd64dd97: Preparing
+fbab5c3cc405: Preparing
+dabf981cb5d2: Preparing
+c537870e5e4e: Preparing
+99896457f2ff: Preparing
+78561cef0761: Preparing
+c537870e5e4e: Waiting
+99896457f2ff: Waiting
+fbab5c3cc405: Waiting
+78561cef0761: Waiting
+dabf981cb5d2: Waiting
+denied: requested access to the resource is denied
+[!] Something went wrong
+Finished: SUCCESS

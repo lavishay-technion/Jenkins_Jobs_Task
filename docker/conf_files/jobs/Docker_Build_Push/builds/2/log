@@ -1,0 +1,94 @@
+Started by remote host 172.19.0.1
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Docker_Build_Push
+[Docker_Build_Push] $ /bin/bash /tmp/jenkins6528358402006494957.sh
+/usr/bin/git
+fatal: destination path 'details_app' already exists and is not an empty directory.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 680B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-alpine
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-alpine
+#2 DONE 1.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 77B done
+#4 DONE 0.0s
+
+#5 [base 1/6] FROM docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 3.08kB done
+#6 DONE 0.0s
+
+#7 [base 4/6] RUN pip install poetry
+#7 CACHED
+
+#8 [stage-1 2/6] WORKDIR /home/app
+#8 CACHED
+
+#9 [stage-1 5/6] COPY --from=base /usr/local/bin /usr/local/bin
+#9 CACHED
+
+#10 [stage-1 3/6] RUN apk add git
+#10 CACHED
+
+#11 [base 2/6] COPY ./pyproject.toml ./
+#11 CACHED
+
+#12 [base 3/6] RUN apk add --no-cache --update build-base git python3-dev libffi-dev
+#12 CACHED
+
+#13 [stage-1 4/6] COPY --from=base /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+#13 CACHED
+
+#14 [base 5/6] RUN poetry config virtualenvs.create false
+#14 CACHED
+
+#15 [base 6/6] RUN poetry install --no-dev
+#15 CACHED
+
+#16 [stage-1 6/6] COPY . /home/app/
+#16 CACHED
+
+#17 exporting to image
+#17 exporting layers done
+#17 writing image sha256:564ab86a0dc3b8dc5b5487cf297da6ffe28b018335cd22fbc75e59822ace9065 done
+#17 naming to docker.io/library/details_app done
+#17 DONE 0.0s
+[+] Working until tagging the new image
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+
+Login Succeeded
+[+] Working until Login
+The push refers to repository [docker.io/alayani/project/details_app]
+89087c10da8a: Preparing
+87433514bece: Preparing
+2b657d50dac7: Preparing
+c7e794632bc3: Preparing
+b9a3fd64dd97: Preparing
+fbab5c3cc405: Preparing
+dabf981cb5d2: Preparing
+c537870e5e4e: Preparing
+99896457f2ff: Preparing
+78561cef0761: Preparing
+dabf981cb5d2: Waiting
+c537870e5e4e: Waiting
+99896457f2ff: Waiting
+78561cef0761: Waiting
+fbab5c3cc405: Waiting
+denied: requested access to the resource is denied
+[!] Something went wrong
+Finished: SUCCESS
